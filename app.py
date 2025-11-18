@@ -489,8 +489,8 @@ except Exception:
 
 LEVEL_ORDER: Tuple[int, ...] = (3, 2, 1, 0)
 LEVEL_LABELS: Dict[int, str] = {
-    3: "🔴 Never",
-    2: "❌ Avoid",
+    3: "❌ Never",
+    2: "🔴 Avoid",
     1: "🟡 Moderation",
     0: "🟢 Safe",
 }
@@ -533,8 +533,8 @@ def build_all_ingredients_cards(all_ingredients: Dict[str, Dict]) -> Tuple[Dict[
     # Status color mapping
     status_colors = {
         "❓ Unknown": "#9d7766",
-        "🔴 Never": "#c64639",
-        "❌ Avoid": "#d35b2b",
+        "❌ Never": "#c64639",
+        "🔴 Avoid": "#d35b2b",
         "🟡 Moderation": "#d4a574",
         "🟢 Safe": "#77aba7",
     }
@@ -690,7 +690,7 @@ if st.session_state.scan_results:
                             st.rerun()
                 
                 with category_cols[2]:
-                    if st.button("❌ Avoid", key="btn_avoid", use_container_width=True):
+                    if st.button("🔴 Avoid", key="btn_avoid", use_container_width=True):
                         added_count = 0
                         for ingredient in selected_ingredients:
                             if add_food_item("Food_Map_Levels.xlsx", ingredient, 2):
@@ -702,7 +702,7 @@ if st.session_state.scan_results:
                             st.rerun()
                 
                 with category_cols[3]:
-                    if st.button("🔴 Never", key="btn_never", use_container_width=True):
+                    if st.button("❌ Never", key="btn_never", use_container_width=True):
                         added_count = 0
                         for ingredient in selected_ingredients:
                             if add_food_item("Food_Map_Levels.xlsx", ingredient, 3):
