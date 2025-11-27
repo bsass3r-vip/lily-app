@@ -612,7 +612,7 @@ with st.form("recipe_form", clear_on_submit=False):
     recipe_text = st.text_area(
         "Recipe",
         height=220,
-        placeholder="Will this kill Lily?...Paste your recipe ingredients here:\nExample:\n2 cups rice\n1 lb chicken\n3 onions\n2 tbsp butter"
+        placeholder="Will this kill Lily?...\nPaste your recipe ingredients here:\nExample:\n2 cups rice\n1 lb chicken\n3 onions\n2 tbsp butter"
     )
     run_scan = st.form_submit_button("Check It!", use_container_width=True)
 
