@@ -1,6 +1,6 @@
-# 🦖 Recipe Allergy Checker
+# 🦖 Lily's Allergy Checker
 
-A retro terminal-style web app that analyzes recipes for food allergies and dietary restrictions.
+A web app that analyzes recipes for food allergies and dietary restrictions so we dont accidentally kill our Lily.
 
 ## Features
 
@@ -56,4 +56,5 @@ This app can be deployed to Streamlit Cloud for mobile browser access:
 1. Push code to GitHub
 2. Connect to Streamlit Cloud
 3. Select the repository and set main file to `app.py`
+
 
